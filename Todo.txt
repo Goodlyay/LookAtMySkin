@@ -1,0 +1,11 @@
+Disable backface culling DONE
+
+Scrollwheel zoom
+
+FOV zoom - almost done needs normal zoom
+
+Disable or enable parts
+
+Alex format
+
+1.7 format

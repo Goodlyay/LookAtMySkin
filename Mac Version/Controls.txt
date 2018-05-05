@@ -1,0 +1,29 @@
+By Good/Goodlyay
+Made with Unity
+------------------------
+
+Use "edit1.7.png" to preview old format skins, "edit1.8.png" to preview the 1.8 format skins, and "edit1.8Alex" to preview 1.8 Alex format skins.
+
+Do not delete or rename these files, otherwise you'll end up with errors.
+
+------------------------
+CONTROLS:
+
+Cycle between skin types - M (Goes in the order of 1.8, 1.7, 1.8Alex)
+
+Refresh skin - Spacebar
+
+Rotate model - Left click and drag anywhere outside the model or on the body of the model
+Pose limbs - Left click and drag on any limbs (TIP: You can more easily spin different axes from different camera angles.)
+
+Reset model rotation - Backspace
+
+Zoom - scroolwheel
+Reset zoom - Press down scrollwheel (AKA mouse button 3)
+
+Darken background - 1
+Lighten background - 2
+Reset background color - 3
+
+Channel the spirit of XSSheep to get your cyan background - 4
+
