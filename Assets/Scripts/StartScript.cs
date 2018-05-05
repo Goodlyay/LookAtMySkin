@@ -26,7 +26,7 @@ public class StartScript : MonoBehaviour {
 
 	//private Vector3 theForwardDirection = Camera.main.transform.TransformDirection (Vector3.forward);
 
-	public string url = "file://edit.png";//"https://dl.dropboxusercontent.com/u/12694594/skins/Chief.png";
+	public string url = "file:///edit.png";//"https://dl.dropboxusercontent.com/u/12694594/skins/Chief.png";
 	// Use this for initialization
 	void Start () {
 		UpdateTextures ();
@@ -81,7 +81,7 @@ public class StartScript : MonoBehaviour {
         {
             DateTime date = new DateTime();
             date = DateTime.UtcNow;
-            Application.CaptureScreenshot("..\\Screenshot" + date.ToFileTimeUtc() + ".png");
+            ScreenCapture.CaptureScreenshot("..\\Screenshot" + date.ToFileTimeUtc() + ".png");
         }
 
 
