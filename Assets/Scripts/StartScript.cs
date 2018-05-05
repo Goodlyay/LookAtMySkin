@@ -125,9 +125,12 @@ public class StartScript : MonoBehaviour {
 		
 		// wait until the download is done
 		yield return www;
-		
-		// assign the downloaded image to the main texture of the object
-		renderer.sharedMaterial.mainTexture = www.texture; //www.LoadImageIntoTexture(renderer.material.mainTexture);
+
+        Texture2D test = new Texture2D(www.texture.width, www.texture.height, www.texture.format, false);
+        www.LoadImageIntoTexture(test);
+
+        // assign the downloaded image to the main texture of the object
+        renderer.sharedMaterial.mainTexture = test; 
 		renderer.sharedMaterial.mainTexture.filterMode = FilterMode.Point;
 	}
 
