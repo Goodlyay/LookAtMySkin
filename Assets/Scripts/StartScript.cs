@@ -23,13 +23,20 @@ public class StartScript : MonoBehaviour {
 
 	private int currentModelShown = 0; //0 is 1.8 1 is 1.7 3 is alex
 	public int myModelNumber;
+    private int screenWidth = 512;
+    private int screenHeight = 512;
 
 	//private Vector3 theForwardDirection = Camera.main.transform.TransformDirection (Vector3.forward);
 
 	public string url = "file:///edit.png";//"https://dl.dropboxusercontent.com/u/12694594/skins/Chief.png";
 	// Use this for initialization
 	void Start () {
-		UpdateTextures ();
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+
+        Screen.SetResolution(screenWidth, screenHeight, false);
+
+        UpdateTextures ();
 		newColorValueRGB = originalColorValueRGB;
 		cameraStartLocation = Camera.main.transform.position;
 		cameraStartRotation = Camera.main.transform.eulerAngles;
